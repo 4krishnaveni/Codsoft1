@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./stylelp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page with Nav Menu</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Website</h1>
+        <section class="menu">
+            <ul class="menu-list">
+                <li><b>Home</b></li>
+                <li class="active"><b>Products</b></li>
+                <li><b>About Us</b></li>
+                <li><b>Contact</b></li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Techology is a Future</p>
+            <p class="msg">Welcome to a responsive journey where every click leads to a seamless experience, tailored just for you</p>
+            <button class="cta">Learn More</button>
+        </section>
+
+        <section class="right">
+            <img src="C:\Users\pujitha\Downloads\technology.jpg" alt="Langing image">
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+      
+</body>
+
+</html>
